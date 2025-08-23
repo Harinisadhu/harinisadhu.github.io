@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harini Sadhu's Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #a8edea, #fed6e3); /* Light Sea Green + Baby Pink gradient */
+      color: #333;
+    }
+
+    /* Lottie Background */
+    lottie-player {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.35; /* transparent animation */
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 150, 136, 0.85); /* Sea Green transparent */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header a {
+      color: #ffeb3b;
+      text-decoration: none;
+    }
+
+    /* Sections */
+    section {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    section h2 {
+      color: #00695c; /* Dark Sea Green */
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 150, 136, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Tech Animation Background -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <lottie-player 
+      src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"  
+      background="transparent"  
+      speed="1"  
+      loop  
+      autoplay>
+  </lottie-player>
+
+  <!-- Header -->
+  <header>
+    <h1>Harini Sadhu's Portfolio</h1>
+    <p>Guntur, Andhra Pradesh, India - 522002</p>
+    <p>Email: <a href="mailto:harinisadhu17@gmail.com">harinisadhu17@gmail.com</a></p>
+    <p>Phone: +91-9390263712</p>
+  </header>
+
+  <!-- Sections -->
+  <section id="home">
+    <h2>HOME</h2>
+    <p>Welcome to Harini Sadhu's portfolio! Explore my skills, projects, and professional journey.</p>
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p>Hi, I’m Harini Sadhu – building sleek and interactive web experiences.
+    Turning ideas into clean, functional, and modern digital solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <p><b>B.Tech in Information Technology</b><br>
+    Kallam Haranadha Reddy Institute of Technology, Guntur (2022 – Present)</p>
+    <p><b>Intermediate (MPC)</b><br>
+    NRI Institute of Technology, Guntur | CGPA: 9.0 / 10 | (2020 – 2022)</p>
+    <p><b>Secondary School (SSC)</b><br>
+    St. Ignatius School, Guntur | CGPA: 9.2 / 10 | (2019 – 2020)</p>
+  </section>
+
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <p>Programming Languages: C, Python, Java, HTML, CSS, JavaScript</p>
+    <p>Tools & Frameworks: MySQL, TensorFlow, Scikit-learn, Tableau, AWS</p>
+    <p>Core Competencies: Data Analysis, Machine Learning, Cybersecurity, Data Analytics</p>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <p><b>Heritage Treasures – An In-Depth Analysis of UNESCO:</b> Built interactive Tableau dashboards to visualize site distribution, preservation status, and regional trends.</p>
+    <p><b>AWS Cloud Deployment Project:</b> Deployed a cloud-based application using AWS EC2, S3, IAM, and CloudWatch.</p>
+  </section>
+
+  <section id="experience">
+    <h2>EXPERIENCE</h2>
+    <p><b>TCS iON Career Edge – Young Professional</b> (Mar–May 2025)</p>
+    <p><b>Data Analytics with Tableau – SmartInternz</b> (Jul 2025)</p>
+    <p><b>Cybersecurity Analyst Job Simulation – Tata (Forage, 2025)</b></p>
+    <p><b>Cybersecurity Virtual Internship – EduSkills & Palo Alto Networks</b> (Apr–Jun 2025)</p>
+  </section>
+
+  <section id="achievements">
+    <h2>ACHIEVEMENTS</h2>
+    <p>Leadership Roles – Organized/led events at college (technical fests, coding clubs).</p>
+    <p>Project Recognition – AWS project/Tableau dashboards recognized in competitions.</p>
+    <p>Workshops – Participated in AI, Cloud, and Cybersecurity workshops.</p>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <p>Reach out via email or phone for collaboration.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Harini Sadhu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
