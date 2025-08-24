@@ -6,34 +6,28 @@
   <title>Harini Sadhu's Portfolio</title>
   <style>
     /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     /* Body */
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background: linear-gradient(to right, #a8edea, #fed6e3); /* Light Sea Green + Baby Pink gradient */
+      background: linear-gradient(to right, #a8edea, #fed6e3);
       color: #333;
     }
 
     /* Lottie Background */
     lottie-player {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       z-index: -1;
-      opacity: 0.35; /* transparent animation */
+      opacity: 0.35;
     }
 
     /* Header */
     header {
-      background: rgba(0, 150, 136, 0.85); /* Sea Green transparent */
+      background: rgba(0, 150, 136, 0.85);
       color: white;
       text-align: center;
       padding: 20px;
@@ -41,11 +35,7 @@
       margin: 20px;
       animation: fadeInDown 1.5s ease;
     }
-
-    header a {
-      color: #ffeb3b;
-      text-decoration: none;
-    }
+    header a { color: #ffeb3b; text-decoration: none; }
 
     /* Sections */
     section {
@@ -57,11 +47,7 @@
       box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
       animation: fadeInUp 1.5s ease;
     }
-
-    section h2 {
-      color: #00695c; /* Dark Sea Green */
-      margin-bottom: 10px;
-    }
+    section h2 { color: #00695c; margin-bottom: 10px; }
 
     /* Footer */
     footer {
@@ -78,18 +64,38 @@
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Buttons */
+    .mail-btn, .call-btn, .profile-btn {
+      display:inline-block;
+      padding:12px 18px;
+      margin:8px;
+      border-radius:8px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    .mail-btn { background:#009688; }
+    .mail-btn:hover { background:#00796b; }
+    .call-btn { background:#f44336; }
+    .call-btn:hover { background:#c62828; }
+    .profile-btn.github { background:#24292e; } /* GitHub black */
+    .profile-btn.github:hover { background:#000; }
+    .profile-btn.linkedin { background:#0077b5; } /* LinkedIn blue */
+    .profile-btn.linkedin:hover { background:#005582; }
   </style>
 </head>
 <body>
-  <!-- Tech Animation Background -->
+
+  <!-- Lottie Tech Animation -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <lottie-player 
-      src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"  
+      src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
       background="transparent"  
       speed="1"  
       loop  
@@ -100,7 +106,7 @@
   <header>
     <h1>Harini Sadhu's Portfolio</h1>
     <p>Guntur, Andhra Pradesh, India - 522002</p>
-    <p>Email: <a href="mailto:harinisadhu17@gmail.com">harinisadhu17@gmail.com</a></p>
+    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harinisadhu17@gmail.com" target="_blank">harinisadhu17@gmail.com</a></p>
     <p>Phone: +91-9390263712</p>
   </header>
 
@@ -140,7 +146,7 @@
   </section>
 
   <section id="Certificates">
-    <h2>CERTICATES</h2>
+    <h2>CERTIFICATES</h2>
     <p><b>TCS iON Career Edge – Young Professional</b> (Mar–May 2025)</p>
     <p><b>Data Analytics with Tableau – SmartInternz</b> (Jul 2025)</p>
     <p><b>Cybersecurity Analyst Job Simulation – Tata (Forage, 2025)</b></p>
@@ -154,16 +160,36 @@
     <p>Workshops – Participated in AI, Cloud, and Cybersecurity workshops.</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>CONTACT</h2>
-    <p>Reach out via email or phone for collaboration.</p>
+    <p>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harinisadhu17@gmail.com" target="_blank">
+        📧 Email: harinisadhu17@gmail.com
+      </a>
+    </p>
+    <p>
+      <a class="mail-btn" 
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=harinisadhu17@gmail.com&su=Portfolio%20Enquiry&body=Hi%20Harini,%0A%0AI%20would%20like%20to%20connect%20regarding..."
+         target="_blank">
+         📩 Send me an Email
+      </a>
+    </p>
+    <p>
+      <a class="call-btn" href="tel:+919390263712">
+        📞 Call Me
+      </a>
+    </p>
+    <p>
+      <a class="profile-btn github" href="https://github.com/Harinisadhu" target="_blank">🐙 GitHub: Harinisadhu</a>
+      <a class="profile-btn linkedin" href="https://www.linkedin.com/in/harini-sadhu-9aa8422a9/" target="_blank">🔗 LinkedIn: harini-sadhu-9aa8422a9</a>
+    </p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2024 Harini Sadhu. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
-
-
